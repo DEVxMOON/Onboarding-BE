@@ -1,0 +1,80 @@
+##### JAVA #####
+onboarding-java/HELP.md
+onboarding-java/.gradle
+onboarding-java/build/
+onboarding-java/!gradle/wrapper/gradle-wrapper.jar
+onboarding-java/!**/src/main/**/build/
+onboarding-java/!**/src/test/**/build/
+
+### STS (Spring Tool Suite) ###
+onboarding-java/.apt_generated
+onboarding-java/.classpath
+onboarding-java/.factorypath
+onboarding-java/.project
+onboarding-java/.settings
+onboarding-java/.springBeans
+onboarding-java/.sts4-cache
+onboarding-java/bin/
+onboarding-java/!**/src/main/**/bin/
+onboarding-java/!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+onboarding-java/.idea
+onboarding-java/*.iws
+onboarding-java/*.iml
+onboarding-java/*.ipr
+onboarding-java/out/
+onboarding-java/!**/src/main/**/out/
+onboarding-java/!**/src/test/**/out/
+
+### NetBeans ###
+onboarding-java/nbproject/private/
+onboarding-java/nbbuild/
+onboarding-java/dist/
+onboarding-java/nbdist/
+onboarding-java/.nb-gradle/
+
+### VS Code ###
+onboarding-java/.vscode/
+
+##### KOTLIN #####
+onboarding-kt/HELP.md
+onboarding-kt/.gradle
+onboarding-kt/build/
+onboarding-kt/!gradle/wrapper/gradle-wrapper.jar
+onboarding-kt/!**/src/main/**/build/
+onboarding-kt/!**/src/test/**/build/
+
+### Kotlin IDEs ###
+onboarding-kt/.kotlin
+
+### STS (Spring Tool Suite) ###
+onboarding-kt/.apt_generated
+onboarding-kt/.classpath
+onboarding-kt/.factorypath
+onboarding-kt/.project
+onboarding-kt/.settings
+onboarding-kt/.springBeans
+onboarding-kt/.sts4-cache
+onboarding-kt/bin/
+onboarding-kt/!**/src/main/**/bin/
+onboarding-kt/!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+onboarding-kt/.idea
+onboarding-kt/*.iws
+onboarding-kt/*.iml
+onboarding-kt/*.ipr
+onboarding-kt/out/
+onboarding-kt/!**/src/main/**/out/
+onboarding-kt/!**/src/test/**/out/
+
+### NetBeans ###
+onboarding-kt/nbproject/private/
+onboarding-kt/nbbuild/
+onboarding-kt/dist/
+onboarding-kt/nbdist/
+onboarding-kt/.nb-gradle/
+
+### VS Code ###
+onboarding-kt/.vscode/
