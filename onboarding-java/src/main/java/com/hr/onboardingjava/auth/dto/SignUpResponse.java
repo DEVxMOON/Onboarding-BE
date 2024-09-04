@@ -1,6 +1,6 @@
 package com.hr.onboardingjava.auth.dto;
 
-import com.hr.onboardingjava.auth.entity.User;
+import com.hr.onboardingjava.auth.entity.Users;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ public class SignUpResponse {
     private String username;
     private String nickname;
 
-    public static SignUpResponse from(User user) {
+    public static SignUpResponse from(Users user) {
         return SignUpResponse.builder()
                 .username(user.getUsername())
                 .nickname(user.getNickname())
