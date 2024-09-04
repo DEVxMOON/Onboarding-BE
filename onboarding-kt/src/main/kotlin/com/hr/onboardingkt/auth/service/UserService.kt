@@ -25,7 +25,7 @@ class UserService (
             val token = jwtPlugin.generateAccessToken(user.id.toString(), user.username,"USER")
             return LoginResponse(token)
         }
-        throw RuntimeException()
+        throw RuntimeException("사용자 이름 또는 비밀번호가 잘못되었습니다.")
     }
 
     @Transactional
@@ -33,7 +33,7 @@ class UserService (
         signUpRequest: SignUpRequest
     ): SignUpResponse {
         userRepository.findByUsername(signUpRequest.username)?.let {
-            throw RuntimeException("Username ${signUpRequest.username} is already taken")
+            throw RuntimeException("사용자 이름 '${signUpRequest.username}'은(는) 이미 존재합니다.")
         }
 
         val user = Users(
