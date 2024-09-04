@@ -26,14 +26,14 @@ public class UserService {
             String token = jwtPlugin.generateAccessToken(user.getId().toString(),user.getUsername(),"USER");
             return LoginResponse.builder().token(token).build();
         }
-        throw new RuntimeException("Invalid credentials");
+        throw new RuntimeException("사용자 이름 또는 비밀번호가 잘못되었습니다.");
     }
 
     @Transactional
     public SignUpResponse signUp(SignUpRequest signUpRequest) {
         Users user = userRepository.findByUsername(signUpRequest.getUsername());
         if (user != null) {
-            throw new RuntimeException("Username already exists");
+            throw new RuntimeException("사용자 이름 '${signUpRequest.username}'은(는) 이미 존재합니다.");
         }
 
         Users newUser = new Users();
