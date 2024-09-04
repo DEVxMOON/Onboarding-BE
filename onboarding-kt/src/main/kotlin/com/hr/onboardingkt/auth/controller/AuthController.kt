@@ -5,6 +5,7 @@ import com.hr.onboardingkt.auth.dto.LoginResponse
 import com.hr.onboardingkt.auth.dto.SignUpRequest
 import com.hr.onboardingkt.auth.dto.SignUpResponse
 import com.hr.onboardingkt.auth.service.UserService
+import jakarta.validation.Valid
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -15,12 +16,12 @@ class AuthController(
 val userService: UserService
 ) {
     @PostMapping("/login")
-    fun login(@RequestBody loginRequest: LoginRequest): ResponseEntity<LoginResponse> {
+    fun login(@Valid @RequestBody loginRequest: LoginRequest): ResponseEntity<LoginResponse> {
         return ResponseEntity.ok(userService.login(loginRequest))
     }
 
     @PostMapping("/signup")
-    fun signUp(@RequestBody signUpRequest: SignUpRequest): ResponseEntity<SignUpResponse> {
+    fun signUp(@Valid @RequestBody signUpRequest: SignUpRequest): ResponseEntity<SignUpResponse> {
         return ResponseEntity.ok(userService.signUp(signUpRequest))
     }
 }
