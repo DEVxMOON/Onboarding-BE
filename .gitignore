@@ -40,10 +40,14 @@ onboarding-java/.vscode/
 ##### KOTLIN #####
 onboarding-kt/HELP.md
 onboarding-kt/.gradle
-onboarding-kt/build/
 onboarding-kt/!gradle/wrapper/gradle-wrapper.jar
 onboarding-kt/!**/src/main/**/build/
 onboarding-kt/!**/src/test/**/build/
+onboarding-kt/build/kotlin
+onboarding-kt/build/classes
+onboarding-kt/build/resources
+onboarding-kt/build/tmp
+onboarding-kt/build/resolvedMainClassName
 
 ### Kotlin IDEs ###
 onboarding-kt/.kotlin
