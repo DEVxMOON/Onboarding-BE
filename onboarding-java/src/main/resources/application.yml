@@ -1,9 +1,8 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:test
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
   h2:
     console:
       enabled: true
@@ -19,9 +18,9 @@ spring:
 
 auth:
   jwt:
-    issuer: your-issuer
-    secret: your-secret-key
+    issuer: ${AUTH_JWT_ISSUER}
+    secret: ${AUTH_JWT_SECRET}
     accessTokenExpirationHour: 12
 
 server:
-  port: 8080
+  port: ${SERVER_PORT}
